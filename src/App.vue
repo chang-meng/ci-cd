@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ message }}</h1>
-    <p>欢迎使用 Vite + Vue3 项目11</p>
+    <p>欢迎使用 Vite + Vue3 项目</p>
     <p>这是一行简单的内容展示</p>
   </div>
 </template>
