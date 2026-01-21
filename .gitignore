@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Production builds
+/dist
+/build
+
+# Environment variables
+.env*.local
+.env*.local.example
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

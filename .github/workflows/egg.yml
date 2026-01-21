@@ -1,0 +1,22 @@
+name: 自动化部署vue项目
+on: push
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: 选择运行环境
+    runs-on: ubuntu-latest
+    steps:
+    - name: 读取仓库内容 
+      uses: actions/checkout@v4
+    - name: 安装依赖和项目打包
+      run: |
+        npm install
+        npm run build
+    - name: 部署项目到服务器
+      uses: jamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: dist
